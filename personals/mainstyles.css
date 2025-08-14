@@ -211,7 +211,7 @@ a {
     text-decoration: none;
     margin-right: 50px;
 }
-.fab {
+.fab, .fas {
     font-size: 25px;
     margin-right: 10px;
 }
