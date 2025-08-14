@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="../sidemenu/navbar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Playwrite+DE+Grund:wght@100..400&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Graduate&display=swap" rel="stylesheet">
+    <title>Calc for BE students</title>
+</head>
+<script>
+    var message, device, startSem;
+    var initialViewportWidth = window.innerWidth;
+    function isMobile() {
+        const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+        if (regex.test(navigator.userAgent)) {
+            console.log("Mobile device detected");
+            message = "Swipe on tab to move";
+            device = "mobile";
+        } else {
+            console.log("Desktop device detected");
+            message = "Click on tab to control or use mouse scroll button";
+            device = "desktop";
+        }
+        startSem = 1;
+    }
+
+    function widthCheck () {
+        if (initialViewportWidth < 950) {
+            myWidth = "90%";
+        } else {
+            myWidth = "100%";
+        }
+    }
+</script>
+<body onload="isMobile(); widthCheck();">
+    <nav>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="../personals/portfolio.html" target="_blank">About Me</a>
+            <a href="cgpa.html" target="_blank">CGPA Calc</a>
+            <a href="../timer/timer.html" target="_blank">Timer</a>
+        </div>
+    </nav>
+    <div class="body">
+        <h1>GRADE POINT AVERAGE CALCULATOR</h1>
+        <p>This is a simple grade calculator that takes your grade and process them to extract your GPA.</p>
+        <p>You can try our CGPA calculator as well to calculate your CGPA.</p>
+
+        <br>
+        <div class="container">
+            <div class="selection" id="alter-width"> 
+                Select your Semester displayed below and click OK to proceed<br>
+                <p id="semester" class="count">1</p>
+                <button onclick="incSem();" class="up-unclicked"><i class="fas fa-arrow-up"></i></button>
+                <button onclick="decSem();" class="down-unclicked"><i class="fas fa-arrow-down"></i></button>
+                <button onclick="getSemester(1);" class="ok-unclicked">OK<span class="white">  >>></span></button>
+            </div>
+            <br>
+            <div id="sem-results"></div>
+        </div>
+        <br><br><br>
+        <div id="final-result"></div>
+    </div>
+</body>
+<script src="Controls.js"></script>
+<script src="GradeControl.js"></script>
+<script src="PrintSubjects.js"></script>
+<script src="DatasetAndFinalCalc.js"></script>
+<script src="../sidemenu/navbar.js"></script>
+</html>

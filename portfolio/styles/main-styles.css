@@ -1,0 +1,240 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Exo 2", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-color: #121212; /* Dark background */
+    color: #fff;
+}
+.justifier {
+    text-align: justify;
+}
+.topper {
+    font-family: monospace;
+    transition: all 0.5s ease;
+    background-color: #1abc9c;
+}
+.topper:hover {
+    color: #0099cc;
+}
+.myapp {
+    font-family: "Playwrite DE Grund", cursive;
+}
+h2 {
+    font-size: xx-large;
+    font-family: "Chakra Petch", sans-serif;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: "Chakra Petch", Arial, sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 1em;
+}
+.section {
+    padding: 3em 0;
+}
+.aboutme-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em; 
+}
+.aboutme-text {
+    flex: 1;
+}
+.aboutme-text div {
+    font-size: 2.5em;
+    font-family: 'Playwrite DE Grund';
+    text-transform: uppercase;
+}
+.aboutme-text .subtitle {
+    font-size: 1.5em;
+    color: #ccc;
+}
+.project, .experience, .education, .skills {
+    background: #000;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 5px;
+    color: #fff;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+.skill {
+    margin: 10px 0;
+}
+.skill-name {
+    margin-bottom: 5px;
+}
+.progress-bar {
+    background-color: #34495e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress-bar div {
+    height: 20px;
+    background-color: #3498db;
+    text-align: right;
+    padding-right: 5px;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+}
+.experience, .project, .skills, .education {
+    background: #9b59b6;
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    max-height: 60px;
+    position: relative;
+}
+.experience:hover, .project:hover, .skills:hover, .education:hover {
+    background-color: #6f2dbd;
+    transform: translateY(-5px);
+}
+.experience.expanded, .project.expanded, .skills.expanded, .education.expanded {
+    max-height: fit-content; /* Adjust based on content */
+}
+.experience .content, .project .content, .skills .skill, .education .grid-container {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+.experience p::before {
+    content: ">_ ";
+    margin-right: 10px;
+}
+.experience p {
+    margin-left: 10px;
+}
+.experience.expanded .content, .project.expanded .content, .skills.expanded .skill, .education.expanded .grid-container {
+    opacity: 1;
+}
+.education h4 {
+    margin-left: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.education p {
+    margin-left: 20px;
+}
+.education p span::before {
+    content: ">_ ";
+}
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: italic;
+}
+.progress-bar2 {
+    background-color: #34495e;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    height: 10px;
+    margin-bottom: 10px;
+}
+.padder {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.progress {
+    height: 10px;
+}
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.legend-text {
+    font-size: 14px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+a {
+    color: #3498db
+}
+.set-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.link-modifier {
+    text-decoration: none;
+}
+.element {
+    text-decoration: none;
+    color: black;
+    background-color: #b9faf8;
+    padding: 10px;
+    border-radius: 15px;
+}
+.details {
+    text-decoration: none;
+    margin-right: 50px;
+}
+.fab, .fas {
+    font-size: 25px;
+    margin-right: 10px;
+}
+@media (max-width: 768px) {
+    .aboutme-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-img-wrapper {
+        margin: 0 0 1em 0;
+    }
+    .set-container {
+        display: block;
+    }
+    .element {
+        background: none;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .element::before {
+        content: ">_ ";
+    }
+    .aboutme-text div, .aboutme-text .subtitle {
+        text-align: center;
+    }
+}
