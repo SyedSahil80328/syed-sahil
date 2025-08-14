@@ -1,114 +1,66 @@
-var setHrs = 0,setMins = 0,setSecs = 0;
-function incHours () {
-    setHrs = document.getElementById('hours').textContent * 1 + 1;
-    hrStyle = document.getElementById("resetHours");
-    if (setHrs == 24)
-        setHrs = 0;
-    var newsetHrs = "0";
-    if (setHrs < 10)
-        newsetHrs = newsetHrs + setHrs;
-    else   
-        newsetHrs = setHrs;
+var setHours=0, setMinutes=0, setSeconds=0;
+function incrementHours () {
+    setHours = document.getElementById('hours').textContent*1 + 1;
+    resetHourStyle = document.getElementById('reset-hours');
     
-    if (setHrs) 
-        hrStyle.style.display = "block";
-    else    
-        hrStyle.style.display = "none";
+    if (setHours == 24)  setHours = 0;
+    let newSetHours = (setHours<10) ? `0${setHours}` : `${setHours}`;
+    resetHourStyle.style.display = (setHours==0) ? 'none' : 'block';
 
-    document.getElementById('hours').innerHTML = newsetHrs;
+    document.getElementById('hours').innerHTML = newSetHours;
 }
 
-function decHours () {
-    var setHrs = document.getElementById('hours').textContent * 1 - 1;
-    hrStyle = document.getElementById("resetHours");
-    if (setHrs == -1)
-        setHrs = 23;
-    var newsetHrs = "0";
-    if (setHrs < 10)
-        newsetHrs = newsetHrs + setHrs;
-    else   
-        newsetHrs = setHrs;
+function decrementHours () {
+    setHours = document.getElementById('hours').textContent*1 - 1;
+    resetHourStyle = document.getElementById('reset-hours');
     
-    if (setHrs) 
-        hrStyle.style.display = "block";
-    else    
-        hrStyle.style.display = "none";
+    if (setHours == -1) setHours = 23;
+    let newSetHours = (setHours<10) ? `0${setHours}` : `${setHours}`;
+    resetHourStyle.style.display = (setHours==0) ? 'none' : 'block';
 
-    document.getElementById('hours').innerHTML = newsetHrs;
+    document.getElementById('hours').innerHTML = newSetHours;
 }
 
-function incMinutes () {
-    var setMins = document.getElementById('minutes').textContent * 1 + 1;
-    mnStyle = document.getElementById("resetMinutes");
-    if (setMins == 60)
-        setMins = 0;
-    var newsetMins = "0";
-    if (setMins < 10)
-        newsetMins = newsetMins + setMins;
-    else   
-        newsetMins = setMins;
+function incrementMinutes () {
+    setMinutes = document.getElementById('minutes').textContent*1 + 1;
+    resetMinutesStyle = document.getElementById('reset-minutes');
+    
+    if (setMinutes == 60)  setMinutes = 0;
+    let newSetMinutes = (setMinutes<10) ? `0${setMinutes}` : `${setMinutes}`;
+    resetMinutesStyle.style.display = (setMinutes==0) ? 'none' : 'block';
 
-    if (setMins) 
-        mnStyle.style.display = "block";
-    else    
-        mnStyle.style.display = "none";
-
-    document.getElementById('minutes').innerHTML = newsetMins;
+    document.getElementById('minutes').innerHTML = newSetMinutes;
 }
 
-function decMinutes () {
-    var setMins = document.getElementById('minutes').textContent * 1 - 1;
-    mnStyle = document.getElementById("resetMinutes");
-    if (setMins == -1)
-        setMins = 59;
-    var newsetMins = "0";
-    if (setMins < 10)
-        newsetMins = newsetMins + setMins;
-    else   
-        newsetMins = setMins;
+function decrementMinutes () {
+    setMinutes = document.getElementById('minutes').textContent*1 - 1;
+    resetMinutesStyle = document.getElementById('reset-minutes');
+    
+    if (setMinutes == -1) setMinutes = 59;
+    let newSetMinutes = (setMinutes<10) ? `0${setMinutes}` : `${setMinutes}`;
+    resetMinutesStyle.style.display = (setMinutes==0) ? 'none' : 'block';
 
-    if (setMins) 
-        mnStyle.style.display = "block";
-    else    
-        mnStyle.style.display = "none";
-
-    document.getElementById('minutes').innerHTML = newsetMins;
+    document.getElementById('minutes').innerHTML = newSetMinutes;
 }
 
-function incSeconds () {
-    var setSecs = document.getElementById('seconds').textContent * 1 + 1;
-    scStyle = document.getElementById("resetSeconds");
-    if (setSecs == 60)
-        setSecs = 0;
-    var newsetSecs = "0";
-    if (setSecs < 10)
-        newsetSecs = newsetSecs + setSecs;
-    else   
-        newsetSecs = setSecs;
+function incrementSeconds () {
+    setSeconds = document.getElementById('seconds').textContent*1 + 1;
+    resetSecondsStyle = document.getElementById('reset-seconds');
+    
+    if (setSeconds == 60)  setSeconds = 0;
+    let newSetSeconds = (setSeconds<10) ? `0${setSeconds}` : `${setSeconds}`;
+    resetSecondsStyle.style.display = (setSeconds==0) ? 'none' : 'block';
 
-    if (setSecs) 
-        scStyle.style.display = "block";
-    else    
-        scStyle.style.display = "none";
-
-    document.getElementById('seconds').innerHTML = newsetSecs;
+    document.getElementById('seconds').innerHTML = newSetSeconds;
 }
 
-function decSeconds () {
-    var setSecs = document.getElementById('seconds').textContent * 1 - 1;
-    scStyle = document.getElementById("resetSeconds");
-    if (setSecs == -1)
-        setSecs = 59;
-    var newsetSecs = "0";
-    if (setSecs < 10)
-        newsetSecs = newsetSecs + setSecs;
-    else   
-        newsetSecs = setSecs;
+function decrementSeconds () {
+    setSeconds = document.getElementById('seconds').textContent*1 - 1;
+    resetSecondsStyle = document.getElementById('reset-seconds');
+    
+    if (setSeconds == -1) setSeconds = 59;
+    let newSetSeconds = (setSeconds<10) ? `0${setSeconds}` : `${setSeconds}`;
+    resetSecondsStyle.style.display = (setSeconds==0) ? 'none' : 'block';
 
-    if (setSecs) 
-        scStyle.style.display = "block";
-    else    
-        scStyle.style.display = "none";
-
-    document.getElementById('seconds').innerHTML = newsetSecs;
+    document.getElementById('seconds').innerHTML = newSetSeconds;
 }

@@ -2,29 +2,31 @@ function sleep (ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function resetTimeBoxAppearance() {
+    document.getElementById('appear-hours').style.display = 'block';
+    document.getElementById('appear-minutes').style.display = 'block';
+    document.getElementById('appear-seconds').style.display = 'block';
+    document.getElementById('starter').style.display = 'block';
+
+}
+
 async function stopper () {
-    var ALARM = document.getElementById('alarm');
-    ALARM.play();
+    var alarm = document.getElementById('alarm');
+    alarm.play();
     await sleep(1000);
-    document.getElementById('the_end').style.display = 'block';
+    document.getElementById('timer-singer').style.display = 'block';
     document.getElementById('continue').style.display = 'none';
     document.getElementById('stop').style.display = 'none';
 
 }
 
-async function stop_playing() {
+async function stopAlarmSound() {
     await sleep(1000);
-    var ALARM = document.getElementById('alarm');
-    ALARM.pause();
-    ALARM.currentTime = 0;  
-    document.getElementById('starter').style.display = 'block';
-    h = document.getElementById("appear_hours");
-    m = document.getElementById("appear_minutes");
-    s = document.getElementById("appear_seconds");
-    document.getElementById('the_end').style.display = 'none';
-    h.style.display = 'block';
-    m.style.display = 'block';
-    s.style.display = 'block';
+    var alarm = document.getElementById('alarm');
+    alarm.pause();
+    alarm.currentTime = 0;  
+    document.getElementById('timer-singer').style.display = 'none';
+    resetTimeBoxAppearance();
 }
 
 let timerInterval;
@@ -38,17 +40,15 @@ function startTimer() {
     document.getElementById('continue').style.display = 'block';
     document.getElementById('stop').style.display = 'block';
 
-    document.getElementById('appear_hours').style.display = 'none';
-    document.getElementById('appear_minutes').style.display = 'none';
-    document.getElementById('appear_seconds').style.display = 'none';
+    document.getElementById('appear-hours').style.display = 'none';
+    document.getElementById('appear-minutes').style.display = 'none';
+    document.getElementById('appear-seconds').style.display = 'none';
 
-    document.getElementById('resetHours').style.display = 'none';
-    document.getElementById('resetMinutes').style.display = 'none';
-    document.getElementById('resetSeconds').style.display = 'none';
+    document.getElementById('reset-hours').style.display = 'none';
+    document.getElementById('reset-minutes').style.display = 'none';
+    document.getElementById('reset-seconds').style.display = 'none';
 
-    if (timerInterval) {
-        clearInterval(timerInterval);
-    }
+    if (timerInterval) clearInterval(timerInterval);
 
     // Reset timer if it's already running
     hours = document.getElementById('hours').textContent*1;
@@ -84,28 +84,24 @@ function updateTimer() {
     }
 }
 
-function PAUSE() {
+function pauseTimer() {
     isPaused = true;
-    document.getElementById('continue').innerHTML = "<button onclick='CONTINUE();' class='normal-button'>CONTINUE</button>";
+    document.getElementById('continue').innerHTML = "<button onclick='continueTimer();' class='normal-button'>CONTINUE</button>";
 }
 
-function CONTINUE() {
+function continueTimer() {
     isPaused = false;
-    document.getElementById('continue').innerHTML = "<button onclick='PAUSE();' class='normal-button'>PAUSE</button>";
+    document.getElementById('continue').innerHTML = "<button onclick='pauseTimer();' class='normal-button'>PAUSE</button>";
 }
 
-function STOP() {
+function stopTimer() {
     clearInterval(timerInterval);
     hours = 0;
     minutes = 0;
     seconds = 0;
 
-    document.getElementById('appear_hours').style.display = 'block';
-    document.getElementById('appear_minutes').style.display = 'block';
-    document.getElementById('appear_seconds').style.display = 'block';
-
-    document.getElementById('starter').style.display = 'block';
-    document.getElementById('continue').innerHTML = "<button onclick='PAUSE();' class='normal-button'>PAUSE</button>";
+    resetTimeBoxAppearance();
+    document.getElementById('continue').innerHTML = "<button onclick='pauseTimer();' class='normal-button'>PAUSE</button>";
     document.getElementById('continue').style.display = 'none';
     document.getElementById('stop').style.display = 'none';
 
@@ -114,11 +110,7 @@ function STOP() {
 }
 
 function updateDisplay() {
-    const hoursStr = hours < 10 ? '0' + hours : hours;
-    const minutesStr = minutes < 10 ? '0' + minutes : minutes;
-    const secondsStr = seconds < 10 ? '0' + seconds : seconds;
-
-    document.getElementById('hours').textContent = hoursStr;
-    document.getElementById('minutes').textContent = minutesStr;
-    document.getElementById('seconds').textContent = secondsStr;
+    document.getElementById('hours').textContent = (hours<10) ? `0${hours}` : `${hours}`;
+    document.getElementById('minutes').textContent = (minutes<10) ? `0${minutes}` : `${minutes}`;
+    document.getElementById('seconds').textContent = (seconds<10) ? `0${seconds}` : `${seconds}`;
 }

@@ -1,15 +1,17 @@
+const zeroTimer = '00';
+const zeroDisplayStyle = 'none';
 
-function RESETHR () {
-    document.getElementById("hours").textContent = "00";
-    document.getElementById("resetHours").style.display = 'none';
+function resetHours() {
+    document.getElementById('hours').textContent = zeroTimer;
+    document.getElementById('reset-hours').style.display = zeroDisplayStyle;
 }
 
-function RESETMN () {
-    document.getElementById("minutes").textContent = "00";
-    document.getElementById("resetMinutes").style.display = 'none';
+function resetMinutes() {
+    document.getElementById('minutes').textContent = zeroTimer;
+    document.getElementById('reset-minutes').style.display = zeroDisplayStyle;
 }
 
-function RESETSC () {
-    document.getElementById("seconds").textContent = "00";
-    document.getElementById("resetSeconds").style.display = 'none';
+function resetSeconds() {
+    document.getElementById('seconds').textContent = zeroTimer;
+    document.getElementById('reset-seconds').style.display = zeroDisplayStyle;
 }

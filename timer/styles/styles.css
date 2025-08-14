@@ -45,10 +45,10 @@ p.aligner {
 audio {
     display: none;
 }
-#resetHours, #resetMinutes, #resetSeconds {
+#reset-hours, #reset-minutes, #reset-seconds {
     display: none;
 }
-#continue, #stop, #the_end {
+#continue, #stop, #timer-singer {
     display: none;
 }
 h1 {

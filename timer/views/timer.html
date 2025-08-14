@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../sidemenu/navbar.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../../sidemenu/styles/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap&family=Ga+Maamli&display=swap" rel="stylesheet">
@@ -19,9 +19,9 @@
             <div class="bar"></div>
         </div>
         <div class="nav-links" id="nav-links">
-            <a href="../personals/portfolio.html" target="_blank">About Me</a>
-            <a href="../GPA2/calc.html" target="_blank">GPA Calc</a>
-            <a href="../GPA2/cgpa.html" target="_blank">CGPA Calc</a>
+            <a href="../../portfolio/views/portfolio.html" target="_blank">About Me</a>
+            <a href="../../cgpacalculator/views/calc.html" target="_blank">GPA Calc</a>
+            <a href="../../cgpacalculator/views/cgpa.html" target="_blank">CGPA Calc</a>
         </div>
     </nav>
     <h1>TIMER</h1>
@@ -32,13 +32,13 @@
                 <div class="times" id="hours">
                     00
                 </div>
-                <div id="appear_hours">
-                    <button class="up" onclick="incHours();"><i class="fas fa-arrow-up"></i></button>
-                    <button class="down" onclick="decHours();"><i class="fas fa-arrow-down"></i></button>
+                <div id="appear-hours">
+                    <button class="up" onclick="incrementHours();"><i class="fas fa-arrow-up"></i></button>
+                    <button class="down" onclick="decrementHours();"><i class="fas fa-arrow-down"></i></button>
                 </div>
             </div>
-            <div id="resetHours" class="element">
-                <button onclick='RESETHR();' class="normal-button">RESET HOURS</button>
+            <div id="reset-hours" class="element">
+                <button onclick='resetHours();' class="normal-button">RESET HOURS</button>
             </div>
         </div>
         <div class="element">
@@ -47,13 +47,13 @@
                 <div class="times" id="minutes">
                     00
                 </div>
-                <div id="appear_minutes">
-                    <button class="up" onclick="incMinutes();"><i class="fas fa-arrow-up"></i></button>
-                    <button class="down" onclick="decMinutes();"><i class="fas fa-arrow-down"></i></button>
+                <div id="appear-minutes">
+                    <button class="up" onclick="incrementMinutes();"><i class="fas fa-arrow-up"></i></button>
+                    <button class="down" onclick="decrementMinutes();"><i class="fas fa-arrow-down"></i></button>
                 </div>
             </div>
-            <div id="resetMinutes" class="element">
-                <button onclick='RESETMN();' class="normal-button">RESET MINUTES</button>
+            <div id="reset-minutes" class="element">
+                <button onclick='resetMinutes();' class="normal-button">RESET MINUTES</button>
             </div>
         </div>
         <div class="element">
@@ -62,36 +62,36 @@
                 <div class="times" id="seconds">
                     00
                 </div>
-                <div id="appear_seconds">
-                    <button class="up" onclick="incSeconds();"><i class="fas fa-arrow-up"></i></button>
-                    <button class="down" onclick="decSeconds();"><i class="fas fa-arrow-down"></i></button>
+                <div id="appear-seconds">
+                    <button class="up" onclick="incrementSeconds();"><i class="fas fa-arrow-up"></i></button>
+                    <button class="down" onclick="decrementSeconds();"><i class="fas fa-arrow-down"></i></button>
                 </div>
             </div>
-            <div id="resetSeconds" class="element">
-                <button onclick='RESETSC();' class="normal-button">RESET SECONDS</button>
+            <div id="reset-seconds" class="element">
+                <button onclick='resetSeconds();' class="normal-button">RESET SECONDS</button>
             </div>
         </div>
     </div>
     <section id="controls" class="container2">
         <div id="continue" class="element">
-            <button onclick='PAUSE();' class="normal-button">PAUSE</button>
+            <button onclick='pauseTimer();' class="normal-button">PAUSE</button>
         </div>
-        <p id="the_end" class="aligner element">
-            <button onclick="stop_playing();" class="normal-button">Close and SET TIME</button>
+        <p id="timer-singer" class="aligner element">
+            <button onclick="stopAlarmSound();" class="normal-button">Close and SET TIME</button>
         </p>
         <div id="stop" class="element">
-            <button onclick='STOP();' class="normal-button">STOP</button>
+            <button onclick='stopTimer();' class="normal-button">STOP</button>
         </div>
     </section> 
     <p id="starter" class="aligner">
         <button onclick="startTimer();" class="normal-button">START</button>
     </p>
     <audio controls id="alarm" preload="auto">
-        <source src="TheFatRat Mashup Super Extended.mp3" type="audio/mpeg">
+        <source src="../assets/thetatrat-mashup-super-extended.mp3" type="audio/mpeg">
     </audio>
 </body>
-<script src="scripts/control_time.js"></script>
-<script src="scripts/smain_counter.js"></script>
-<script src="scripts/reset_all.js"></script>
-<script src="../sidemenu/navbar.js"></script>
+<script src="../scripts/control-time.js"></script>
+<script src="../scripts/main-counter.js"></script>
+<script src="../scripts/reset-all.js"></script>
+<script src="../../sidemenu/scripts/navbar.js"></script>
 </html>
