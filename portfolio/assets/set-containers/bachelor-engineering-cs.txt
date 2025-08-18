@@ -1,0 +1,14 @@
+C Programming
+Engineering Mathematics
+Computational Thinking
+Java Programming
+Application Development Practices (ADP)
+Data Structures and Algorithms (DSA)
+Database Management Systems (DBMS)
+Digital Fundamentals and Computer Organization (DFCO)
+Operating Systems (OS)
+Computer Networks (CN)
+Machine Learning (ML)
+Software Engineering (SE)
+Information Security
+Data Mining

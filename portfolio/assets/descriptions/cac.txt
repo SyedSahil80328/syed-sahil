@@ -1,0 +1,4 @@
+<strong>Employer Name:</strong> Capital Educational and Charitable Trust
+As a freelancer and team lead, I led the implementation of a full-stack application for the trust, focusing on both front-end and back-end development.
+I designed and developed a responsive website tailored to the trust’s informational and usability needs, ensuring smooth user experience and efficient data handling through PHP and MySQL.
+Development was carried out using VS Code, with XAMPP and PhpMyAdmin used for local server testing and database management, resulting in a smooth deployment and client satisfaction.

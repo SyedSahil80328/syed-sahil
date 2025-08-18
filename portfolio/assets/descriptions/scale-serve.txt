@@ -1,0 +1,2 @@
+Docker is Designed to make applications to be OS independent, portable and easy deployable into containers. Users can just pull the image from registry and work on their host machine. Kubernetes helps us to scale the pods up/down according to user traffic.
+This project "Containerization using Docker and load scaling using Kubernetes" offers a lightweight, efficient, scalable, and highly portable alternative to traditional VMs, making it a powerful solution for modern cloud-native applications.

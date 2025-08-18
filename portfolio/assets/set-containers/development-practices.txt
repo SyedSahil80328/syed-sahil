@@ -1,0 +1,8 @@
+Agile Methodology
+Test-Driven Development
+MVVM-C
+Continuous Integration/Continuous Deployment
+Version Control
+Design Patterns
+Object-Oriented Programming
+Modular Programming

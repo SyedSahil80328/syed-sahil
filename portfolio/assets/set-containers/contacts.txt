@@ -1,0 +1,4 @@
+<a href="mailto:syedsahil28803@gmail.com" target="_blank"><i class="fab fa-google"></i>syedsahil28803@gmail.com</a>
+<a href="https://www.linkedin.com/in/syed-sahil-a-fr35h3r/" target="_blank"><i class="fab fa-linkedin"></i>syed-sahil-a-fr35h3r</a>
+<a href="https://github.com/SyedSahil80328/syed-sahil" target="_blank"><i class="fab fa-github"></i>SyedSahil80328</a> 
+<a href="https://leetcode.com/u/syedsahil28803" target="_blank"><i class="fas fa-laptop-code"></i>leetcode</a>

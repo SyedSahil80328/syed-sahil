@@ -1,0 +1,6 @@
+<strong>Employer Name:</strong> Gen Digital Inc. (formerly Symantec and NortonLifeLock)
+As a software engineering intern on the mobile development team, I worked on key features of the Norton VPN product and contributed to SafeSocial’s backend optimization.
+My responsibilities included refactoring codebase, designing UI components, and writing unit tests to support product release stability and reliability.
+I also led a backend migration task, transitioning SafeSocial’s data from PostgreSQL to DynamoDB, which improved query latency by 35% for large datasets.
+<strong>Technologies:</strong> Swift, Xcode, XCTest, Kotlin, Android Studio, Git, PostgreSQL, DynamoDB
+<a href="../assets/gen-internship-completion-letter.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View Internship Completion Letter</a>

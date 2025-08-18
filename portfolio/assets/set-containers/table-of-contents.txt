@@ -1,0 +1,6 @@
+<a href="#aboutme" class="link-modifier">About Me</a>
+<a href="#experiences" class="link-modifier">Work Experiences</a>
+<a href="#projects" class="link-modifier">Projects</a>
+<a href="#skills" class="link-modifier">Skills</a>
+<a href="#education" class="link-modifier">Education</a>
+<a href="#contact" class="link-modifier">Contact</a>

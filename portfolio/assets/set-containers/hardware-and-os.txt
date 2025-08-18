@@ -1,0 +1,7 @@
+Android Mobile
+iOS Mobile
+Raspberry Pi
+Digital Components
+Windows
+Ubuntu
+Mac OS

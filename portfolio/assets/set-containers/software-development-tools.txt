@@ -1,0 +1,11 @@
+Xcode
+Visual Studio Code
+Git
+ChatGPT
+Terminal
+GitHub
+Google Colab
+Docker
+Kubernetes
+Android Studio
+Jira
