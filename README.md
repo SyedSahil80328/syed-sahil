@@ -8,10 +8,10 @@ This repository holds my **first GitHub Pages deployment**, a milestone where I 
 
 ## 🌐 My GitHub.io Creations
 
-1. **[My Portfolio](https://syedsahil80328.github.io/syed-sahil/personals/portfolio.html)** – Showcasing my projects, skills, and experience.
-2. **[GPA Calculator](https://SyedSahil80328.github.io/syed-sahil/GPA2/calc.html)** – Quickly calculate your GPA with ease.
-3. **[CGPA Calculator](https://SyedSahil80328.github.io/syed-sahil/GPA2/cgpa.html)** – Compute cumulative performance efficiently.
-4. **[Timer](https://SyedSahil80328.github.io/syed-sahil/timer/timer.html)** – A simple, responsive timer for various use cases.
+1. **[My Portfolio](https://syedsahil80328.github.io/syed-sahil/portfolio/views/portfolio.html)** – Showcasing my projects, skills, and experience.
+2. **[GPA Calculator](https://SyedSahil80328.github.io/syed-sahil/cgpacalculator/views/gpa-calculator.html)** – Quickly calculate your GPA with ease.
+3. **[CGPA Calculator](https://SyedSahil80328.github.io/syed-sahil/cgpacalculator/views/cgpa-calculator.html)** – Compute cumulative performance efficiently.
+4. **[Timer](https://SyedSahil80328.github.io/syed-sahil/timer/views/timer.html)** – A simple, responsive timer for various use cases.
 
 ---
 
