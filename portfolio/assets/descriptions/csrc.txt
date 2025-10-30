@@ -3,4 +3,4 @@ As a fellowship intern and team vice leader, I collaborated on the implementatio
 We built <strong>NavAid</strong>, a real-time voice-guided system capable of detecting 91 object classes with 98.63% accuracy. I was involved in hardware procurement, Raspberry Pi setup, and peripheral integration.
 The project featured dual-mode navigation using GPS and an offline fallback powered by LangChain. I also contributed to the documentation process, capturing development and workflow stages with technical figures.
 <strong>Technologies:</strong> Python, OpenCV, Raspberry Pi, YOLO, Haar Cascades, LangChain, pyttsx3
-<a href="../assets/" target="_blank"><i class="fas fa-file-pdf"></i> View CSRC SIP Certificate</a>
+<a href="../assets/csrc-sip-certificate.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CSRC SIP Certificate</a>
