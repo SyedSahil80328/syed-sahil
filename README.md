@@ -20,7 +20,6 @@ This repository holds my **first GitHub Pages deployment**, a milestone where I 
 1. **[FallGuard](https://github.com/SyedSahil80328/FallGuard)** - A Time-Series Deep Learning Model for Intelligent Fall Detection.
 2. **[NavAid](https://github.com/SyedSahil80328/NaiAid)** - Integrated Assistive System for Object Detection and Blind Navigation.
 3. **[RailNet](https://github.com/SyedSahil80328/RailNet)** - Integrated Railway Operations and Ticketing System.
-4. **[ScaleServe](https://github.com/SyedSahil80328/ScaleServe)** - Containerization of Applications using Docker and Load Scaling using Kubernetes.
 
 ---
 
