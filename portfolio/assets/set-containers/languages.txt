@@ -1,11 +1,4 @@
-Swift
-Python
-Java
-HTML
-CSS
-JavaScript
-PHP
-C
 C++
-SQL
-Kotlin
+Java
+Python
+Swift

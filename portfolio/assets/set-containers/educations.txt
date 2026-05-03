@@ -1,0 +1,5 @@
+Specialization: Computer Science  
+Institute: MIT, Anna University  
+Duration: 2021 – 2025  
+CGPA: 9.04  
+Coursework: DSA, DBMS, OS, CN, ML  

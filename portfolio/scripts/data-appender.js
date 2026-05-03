@@ -1,17 +1,11 @@
 [
-    ['table-of-contents', 'element'],
-    ['raspberry-pi-hardware', 'element'],
-    ['software-development-tools', 'element'],
-    ['soft-skills', 'element'],
     ['languages', 'element'],
-    ['hardware-and-os', 'element'],
-    ['development-practices', 'element'],
-    ['bachelor-engineering-cs', 'element'],
-    ['higher-secondary-education', 'element'],
-    ['secondary-education', 'element'],
+    ['development-tools', 'element'],
+    ['focus-areas', 'element'],
+    ['educations', 'element'],
     ['contacts', 'link']
 ].forEach(pair => {
-    fetch(`../assets/set-containers/${pair[0]}.txt`)
+    fetch(`../assets/set-containers/${pair[0]}.txt?noCache=${Date.now()}`)
     .then(response => response.text())
     .then(text => {
         const lines = text.split('\n');
@@ -26,17 +20,23 @@
     .catch(err => console.error('Error loading file:', err));
 });
 
-['about-me', 'gen-digital', 'csrc', 'cac', 'fall-guard', 'gait-sense', 'nav-aid', 'rail-net', 'scale-serve'].forEach(id => {
-    fetch(`../assets/descriptions/${id}.txt`)
+['about-me', 'gen-digital', 'csrc', 'fall-guard', 'nav-aid', 'rail-net'].forEach(id => {
+    fetch(`../assets/descriptions/${id}.txt?noCache=${Date.now()}`)
     .then(response => response.text())
     .then(text => {
         const lines = text.split('\n');
         const setContainerPlaceHolder = document.getElementById(id);
-        lines.forEach(line => {
-            const p = document.createElement('p');
-            p.innerHTML = line;
-            setContainerPlaceHolder.appendChild(p);
-        });
+        
+        var p = document.createElement('p');
+        p.innerHTML = lines[0];
+        setContainerPlaceHolder.appendChild(p);
+        p = document.createElement('p');
+        setContainerPlaceHolder.appendChild(p);
+
+        for (j=1 ; j<lines.length ; j++) {
+            p.innerHTML += lines[j];
+        }
+
     })
     .catch(err => console.error('Error loading file:', err));
 });

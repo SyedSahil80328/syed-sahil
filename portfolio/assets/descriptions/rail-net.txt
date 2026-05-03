@@ -1,3 +1,7 @@
-Streamlining railway operations through smart technology: This web application was developed to efficiently manage train schedules and over 100 booking records with a focus on security and usability. The platform ensures authenticated access to sensitive operations and ticketing functions, tailored for administrative control and user convenience.
-The system leverages Flask for backend routing and session management, MySQL for structured data storage, and HTML, CSS, and JavaScript for a responsive front-end interface. Secure transactions and login processes were reinforced using Triple DES (TDES) encryption. The backend logic followed Object-Oriented Programming principles, enabling scalable and maintainable code.
-Key features include automated PDF ticket generation for every booking and real-time voice alerts to guide users through the interface, both of which enhanced overall usability. During testing, the solution performed successfully across 90% of scenarios, demonstrating its reliability in real-world conditions.
+<strong>RailNet: </strong> Web-based Railway Management System
+• Built a web application to manage train schedules and booking records with authenticated access<br>   
+• Implemented backend using Flask with session management and MySQL for structured data storage<br> 
+• Applied Triple DES (TDES) encryption for password protection as part of learning secure system design concepts<br>  
+• Added features like PDF ticket generation and sequential voice announcements (Tamil → Hindi → English) using gTTS, inspired by real-world railway systems  <br><br>
+<strong>Tech:</strong> Python, Flask, MySQL, HTML, CSS, JavaScript<br>
+<a href="https://github.com/SyedSahil80328/RailNet" target="_blank"><i class="fab fa-github"></i><i>Github</i></a>

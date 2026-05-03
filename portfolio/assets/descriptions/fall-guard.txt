@@ -1,3 +1,7 @@
-FallGuard is a fall detection system built to overcome key limitations of vision-based approaches, such as privacy concerns and camera blind spots. It leverages wearable sensor data to provide accurate and real-time fall detection, offering a reliable alternative in both indoor and outdoor settings.
-The system utilizes triaxial accelerometer signals from wearable devices, augmented using SMOTE to address class imbalance. It employs an enhanced InceptionTimePlus architecture tailored for time series classification, capturing subtle temporal dynamics associated with fall events.
-FallGuard achieved a classification accuracy of 98.84% and a fooling rate of 96.29%, outperforming four established deep learning baselines. Its strong performance and generalizability make it well-suited for integration into healthcare monitoring systems.
+<strong>FallGuard:</strong> Time-Series Deep Learning for Fall Detection<br>
+• Built a fall detection system using wearable sensor data, avoiding limitations of vision-based approaches (privacy, camera dependency)<br>
+• Processed triaxial accelerometer signals and handled class imbalance using SMOTE with filtering of unrealistic samples<br>
+• Used an InceptionTime-based architecture to capture temporal patterns in motion data<br>
+• Achieved ~98.8% accuracy on the KFall dataset, outperforming LSTM, TCN, and Transformer-based baselines<br><br>
+<strong>TECH STACK:</strong> Python | PyTorch | tsai | scikit-learn<br>
+<a href='https://github.com/SyedSahil80328/FallGuard' target='_blank'><i class="fab fa-github"></i><i>GitHub</i></a>

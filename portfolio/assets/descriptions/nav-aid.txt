@@ -1,3 +1,7 @@
-NavAid is an assistive navigation system designed to support visually impaired users by detecting up to 91 objects and providing real-time voice guidance along with GPS-based location sharing. The system enables users to navigate their surroundings safely and independently, both indoors and outdoors.
-It is developed using YOLO for general object detection, Haar cascades for face recognition, pyttsx3 for voice output, and LangChain for enabling offline navigation logic. Integrated GPS sharing further enhances user safety by allowing real-time tracking and assistance when needed.
-The entire solution is deployed on a Raspberry Pi, achieving a detection accuracy of 98.63% in live conditions. Real-time performance and offline capability make NavAid a reliable companion for enhancing mobility and accessibility among the visually impaired.
+<strong>NavAid:</strong> Assistive Navigation System for the Visually Impaired  
+• Built a real-time assistive system on Raspberry Pi to detect objects and provide voice-guided alerts<br>
+• Implemented YOLO-based object detection supporting ~91 object classes with distance-based notifications<br>
+• Processed live camera input for real-time detection and user feedback<br>
+• Explored GPS-based navigation, but faced hardware limitations; focused on reliable object detection and alert system<br><br>
+<strong>TECH STACK:</strong> Python | OpenCV | YOLO | Raspberry Pi<br>
+<a href='https://github.com/SyedSahil80328/NavAid' target='_blank'><i class="fab fa-github"></i><i>GitHub</i></a>

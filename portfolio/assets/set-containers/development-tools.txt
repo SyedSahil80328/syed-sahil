@@ -1,0 +1,7 @@
+PyTorch 
+tsai 
+Flask 
+OpenCV 
+Git 
+Linux 
+Raspberry Pi

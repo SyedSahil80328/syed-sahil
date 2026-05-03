@@ -11,7 +11,7 @@ document.querySelectorAll('.concealer h3').forEach(function(header) {
     });
 });
 
-const titles = ['a Software Engineer!', 'an Application Developer!', 'a Web Developer!', 'a Mobile Developer!', 'an AI enthusiast!'];
+const titles = [' Machine Learning Developer!', ' Backend Systems Engineer!', 'n Application Developer!', ' Time-Series DL Engineer!'];
 designationField = document.getElementById('designation');
 
 let end = 0, i=0;
@@ -20,7 +20,7 @@ let changerInterval = null;
 let isIncrementing = true;
 
 function updateIValue() {
-    i = !isIncrementing?(i+1)%5:i;
+    i = !isIncrementing?(i+1)%titles.length:i;
     isIncrementing = !isIncrementing;
     clearInterval(changerInterval);
     highlighterInterval = setInterval(highLightDesignation, 30);
