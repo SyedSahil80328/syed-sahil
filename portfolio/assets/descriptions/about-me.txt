@@ -1,2 +1,2 @@
-Computer Science graduate (GATE 2026 AIR 1489) with experience in software engineering and machine learning systems.
-Built FallGuard (time-series deep learning, ~98.8% accuracy) and NavAid (real-time assistive system on Raspberry Pi). Strong foundation in Data Structures & Algorithms and backend development.
+Computer Science graduate (GATE 2026 AIR 1489) with experience in software engineering and machine learning systems. Built FallGuard (time-series deep learning, ~98.8% accuracy) and NavAid (real-time assistive system on Raspberry Pi). Strong foundation in Data Structures & Algorithms and backend development.
+Click on any pink box to expand/close that box.

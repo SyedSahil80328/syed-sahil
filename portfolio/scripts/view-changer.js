@@ -4,9 +4,9 @@ document.querySelectorAll('.concealer h3').forEach(function(header) {
         project.classList.toggle('expanded');
         const toggleButton = header.querySelector('.toggle-button');
         if (project.classList.contains('expanded')) {
-            toggleButton.textContent = 'see less';
+            toggleButton.textContent = '/\\';
         } else {
-            toggleButton.textContent = 'see more';
+            toggleButton.textContent = '\\/';
         }
     });
 });

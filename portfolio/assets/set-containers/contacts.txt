@@ -2,3 +2,4 @@
 <a href="https://www.linkedin.com/in/syed-sahil-ameer/" target="_blank"><i class="fab fa-linkedin"></i>syed-sahil-ameer</a>
 <a href="https://github.com/SyedSahil80328" target="_blank"><i class="fab fa-github"></i>SyedSahil80328</a> 
 <a href="https://codeforces.com/profile/SyedSahil80328" target="_blank"><i class="fas fa-laptop-code"></i>CodeForces</a>
+<a href="https://leetcode.com/u/syedsahil28803/" target="_blank"><i class="fas fa-laptop-code"></i>LeetCode</a>
