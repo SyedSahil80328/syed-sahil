@@ -1,10 +1,13 @@
-[
+let elements = [
     ['languages', 'element'],
     ['development-tools', 'element'],
     ['focus-areas', 'element'],
-    ['educations', 'element'],
+    ['beducation', 'element'],
+    ['meducation', 'element'],
     ['contacts', 'link']
-].forEach(pair => {
+]
+
+elements.forEach(pair => {
     fetch(`../assets/set-containers/${pair[0]}.txt?noCache=${Date.now()}`)
     .then(response => response.text())
     .then(text => {
@@ -20,7 +23,9 @@
     .catch(err => console.error('Error loading file:', err));
 });
 
-['about-me', 'gen-digital', 'csrc', 'fall-guard', 'nav-aid', 'rail-net'].forEach(id => {
+let expProj = ['about-me', 'gen-digital', 'csrc', 'fall-guard', 'nav-aid', 'rail-net']
+
+expProj.forEach(id => {
     fetch(`../assets/descriptions/${id}.txt?noCache=${Date.now()}`)
     .then(response => response.text())
     .then(text => {

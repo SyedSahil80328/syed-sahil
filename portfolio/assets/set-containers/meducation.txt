@@ -1,0 +1,5 @@
+Specialization: Computer Science  
+Institute: NITK, Surathkal  
+Duration: 2026 - 2028  
+CGPA: N/A for now
+Coursework: Algo, Complexity, Cloud Arch.  
